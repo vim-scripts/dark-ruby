@@ -1,9 +1,12 @@
 " Vim color file
 " Maintainer:   Priit Tamboom <priit ät mx.ee>
 " Last Change: Alfa version 
-" URL: http://priit.mx.ee/dark-ruby
+" URL: http://www.vim.org/scripts/script.php?script_id=2256
 
-" your pick:
+" In order to enamble 256 colors on Ubuntu 
+" install: sudo apt-get install ncurses-term
+set term=xterm-256color
+
 set background=dark
 hi clear
 if exists("syntax_on")
@@ -55,7 +58,7 @@ let g:colors_name="dark-ruby"
 
 " syntax highlighting groups
 hi LineNr		ctermfg=252	guifg=252	
-hi Comment		ctermfg=28	guifg=28	
+hi Comment		ctermfg=darkgreen	guifg=28	
 hi Constant		ctermfg=185	guifg=185	
 hi Identifier		ctermfg=252	guifg=252	
 hi Statement		ctermfg=32	guifg=32	
@@ -64,7 +67,7 @@ hi Type		ctermfg=167	guifg=167
 hi Special		ctermfg=252	guifg=252	
 hi Underlined		ctermfg=red	guifg=red	
 hi Ignore		ctermfg=red	guifg=red	
-hi Error		ctermfg=red	guifg=red	
+hi Error		ctermfg=160 ctermbg=none	guifg=160	guibg=none
 hi Todo			ctermfg=red	guifg=red	
 
 " Alfa version notes: color 'red' means I haven't set color yet
